@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+}
+#startCarousel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.startCarousel{
+    width: 95%;
+}
+#holidays{
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.holidays{
+    width: 95%;
+
+}
+.ideas{
+    margin-top: 20px;
+}
+.ideas img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#catagory{
+    width: 100%;
+    min-height: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catagory{
+    width: 95%;
+}
+#newDesign{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.newDesign{
+    width: 95%;
+
+}
+.clothesAndElectronica{
+    width: 100%;
+    border: 0.3px solid rgb(178, 178, 178);
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.clothesAndElectronica img{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.clothesAndElectronica h5{
+    color: rgb(26, 139, 232);
+}
+.clothesCarousel{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 540px;
+}
+.clothesCarousel img{
+    width: 100%;
+    height: 540px;
+}
+
+@media screen and (min-width: 700px) {
+    
+}
