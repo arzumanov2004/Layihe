@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+}
+
+#startCarousel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#startCarousel .startCarousel {
+  width: 95%;
+}
+
+#holidays {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#holidays .holidays {
+  width: 95%;
+}
+#holidays .holidays .ideas {
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+#holidays .holidays .ideas:hover {
+  transform: scale(1.1);
+}
+#holidays .holidays .ideas img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#coupon {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#coupon .coupon {
+  width: 95%;
+}
+#coupon .coupon .collactibles {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: Assistant;
+  color: #7A4D9E;
+}
+#coupon .coupon img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#catagory {
+  width: 100%;
+  min-height: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#catagory .catagory {
+  width: 95%;
+}
+#catagory .catagory .ideas {
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+#catagory .catagory .ideas:hover {
+  transform: scale(1.1);
+}
+#catagory .catagory .ideas img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#newDesign {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 30px;
+}
+#newDesign .newDesign {
+  width: 95%;
+}
+#newDesign .newDesign .clothesAndElectronica {
+  width: 100%;
+  border: 0.3px solid rgb(178, 178, 178);
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#newDesign .newDesign .clothesAndElectronica img {
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#newDesign .newDesign .clothesAndElectronica h5 {
+  color: rgb(26, 139, 232);
+}
+#newDesign .newDesign .clothesCarousel {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 540px;
+}
+#newDesign .newDesign .clothesCarousel img {
+  width: 100%;
+  height: 540px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 721px) and (min-width: 541px) {
+  #newDesign .newDesign .clothesCarousel img {
+    min-height: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #newDesign .newDesign .clothesCarousel img {
+    min-height: 300px;
+  }
+}
+#animationClothes {
+  width: 100%;
+  min-height: 600px;
+  margin-top: 30px;
+  background-image: url("https://www.ironitekstil.com/ContentImages/Banner/ssite.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: animateBackground 20s linear infinite;
+}
+#animationClothes .animationClothes {
+  width: 100%;
+  min-height: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#animationClothes .animationClothes div {
+  text-align: center;
+}
+#animationClothes .animationClothes div h1 {
+  font-size: 180px;
+  font-weight: 800;
+  font-family: serif;
+}
+#animationClothes .animationClothes div h2 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: serif;
+}
+
+@media screen and (max-width: 721px) and (min-width: 541px) {
+  #animationClothes {
+    min-height: 500px;
+  }
+  #animationClothes .animationClothes {
+    min-height: 500px;
+  }
+  #animationClothes .animationClothes div h1 {
+    font-size: 135px;
+    font-weight: 700;
+  }
+  #animationClothes .animationClothes div h2 {
+    font-size: 65px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 540px) {
+  #animationClothes {
+    min-height: 400px;
+  }
+  #animationClothes .animationClothes {
+    min-height: 400px;
+  }
+  #animationClothes .animationClothes div h1 {
+    font-size: 100px;
+    font-weight: 700;
+  }
+  #animationClothes .animationClothes div h2 {
+    font-size: 45px;
+    font-weight: 600;
+  }
+}
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+#genres {
+  width: 100%;
+  height: auto;
+}
+#genres .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#genres .container .card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+#genres .container .card:hover {
+  transform: scale(1.1);
+}
+#genres .container .card .text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+#genres .container .card .text h2 {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: Sora;
+  color: #ffffff;
+  text-transform: none;
+  text-decoration: none;
+}
+#genres .container .card .text img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+  color: #333;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  padding: 14px 25px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+}
+
+.red-btn {
+  background: #ed1b24;
+  border: 2px solid #ed1b24;
+  color: #fff;
+}
+.red-btn:hover {
+  background: #1c376c;
+  color: #fff;
+  border-color: #ffffff;
+}
+
+footer {
+  background-color: #222023;
+  background-image: linear-gradient(to bottom, #222023, #1e2c47);
+  color: #fff;
+  padding: 220px 0;
+  font-size: 17px;
+}
+footer h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+footer .about-footer li i {
+  position: absolute;
+  left: 0;
+}
+footer .about-footer li {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 40px;
+}
+footer .about-footer ul {
+  margin-top: 40px;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #ed1b24;
+}
+footer .footer-title {
+  border-bottom: 2px solid #a61f2d;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+}
+footer ul.footer-social {
+  float: right;
+}
+footer ul.footer-social li {
+  display: inline;
+  margin-right: 16px;
+}
+footer ul.footer-social li i {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  color: #222025;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.5s;
+  font-weight: 800;
+}
+footer ul.footer-social li i:hover {
+  background: #ed1b24;
+  color: #fff;
+}
+footer ul.footer-social li:last-child {
+  margin-right: 0px;
+}
+footer .page-more-info li {
+  margin-bottom: 31px;
+}
+footer .table td:first-child {
+  font-weight: 600;
+  padding-left: 33px;
+}
+footer .table td:last-child {
+  text-align: right;
+}
+footer .table td {
+  padding: 0px;
+  border: 0;
+}
+footer .table td i {
+  position: absolute;
+  left: 0px;
+  font-size: 21px;
+  top: 6px;
+}
+footer .table td {
+  position: relative;
+  padding: 4px 0;
+}
+footer .footer-logo td {
+  padding-right: 4px !important;
+}
+footer .footer-logo td:last-child {
+  padding-right: 0px !important;
+}
+footer hr {
+  border-color: #9294a0;
+}
+footer .footer-bottom p {
+  text-align: right;
+}
+footer .footer-bottom {
+  margin-top: 30px;
+}
+footer .open-hours hr {
+  margin: 30px 0;
+}
