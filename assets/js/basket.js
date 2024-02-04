@@ -1,39 +1,28 @@
-const div = document.getElementById('myDiv')
+const proBasket = document.getElementById('proBasket')
 
-function getSebet() {
-    div.innerHTML = ''
-    const basket = JSON.parse(localStorage.getItem('basket')) || []
-    basket.map((item,index) =>{
-        const box = document.createElement('div')
-        box.className = 'myBox col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12'
-        box.innerHTML = `
-        <img src="${item.image}" alt="">
-        <h3>${item.title}</h3>
-        <h4>$${item.price}</h4>
-        <h4>Urun Sayi : ${item.count} edet</h4>
-        <button onclick="deleteFromCount(${index})">-</button>
-        <button onclick="deleteFromCart(${index})">Delete</button>
+function getproducts(){
+    proBasket.innerHTML = ''
+let cart = JSON.parse(localStorage.getItem('cart'))
+cart.map((item,index)=>{
+    const box = document.createElement('div')
+    box.className = "box col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3"
+    box.innerHTML = `
+    <img src="${item.image}" alt="">
+    <p>${item.name}</p>
+    <p>${item.price}</p>
+    <p>${item.count}</p>
+    <div class="btndiv">
+    <button onclick="removefrombasket(${index})">Remove from<i class="fa-brands fa-shopify"></i></button>
 
-        `;
-        div.appendChild(box)
-    })
+</div>
+    `
+    proBasket.appendChild(box)
+})
 }
-function deleteFromCount(index) {
-    const basket = JSON.parse(localStorage.getItem('basket')) || []
-    if(basket[index].count > 1){
-        basket[index].count -= 1
-    }else{
-        basket.splice(index,1)
-    }
-    localStorage.setItem('basket',JSON.stringify(basket))
-    getBasket()
+getproducts()
+function removefrombasket(index){
+    let cart = JSON.parse(localStorage.getItem('cart')) || []
+cart.splice(index,1)
+localStorage.setItem('cart',JSON.stringify(cart));
+getproducts()
 }
-
-function deleteFromCart(index) {
-    const basket = JSON.parse(localStorage.getItem('basket')) || []
-    cart.splice(index,1)
-    localStorage.setItem('basket',JSON.stringify(basket))
-    getSebet()
-
-}
-getSebet()
