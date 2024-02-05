@@ -1,9 +1,11 @@
 const div = document.getElementById('myDiv');
+const myBtn = document.getElementById('myBtn')
 let db;
-
+let limit = 12
+let page = 1
 async function getProducts() {
     try {
-        const response = await axios.get('https://65685f8d9927836bd974aa4c.mockapi.io/pradacts');
+        const response = await axios.get(`https://65685f8d9927836bd974aa4c.mockapi.io/pradacts?page=${page}&limit=${limit}`);
         const data = response.data;
         db = data;
 
@@ -23,17 +25,19 @@ async function getProducts() {
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star-half-stroke"></i>
               </div>
-              <a href="./detailed.html"><button onclick="addToCart(${item.id})">Details</button></a>
+              <a href="./detailed.html"><button class="button" onclick="addToCart(${item.id})">Details</button></a>
+              <button class="btn" onclick="adToWishlist(${item.id})"><i class="fa-solid fa-heart"></i></button>
               </div>
                 
             `;
             div.appendChild(box);
         });
+        page++;
     } catch (error) {
         console.error('Error:', error);
     }
 }
-
+myBtn.addEventListener('click',getProducts)
 function addToCart(id) {
     // Önceki sepet verilerini al
     let existingCart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -55,8 +59,8 @@ getProducts();
 
 const myApi = document.getElementById('myApi');
 const btn = document.getElementById('btn')
-let page = 1
-let limit = 6
+limit = 6
+page = 1
 
 async function getApi() {
     try {
@@ -80,7 +84,8 @@ async function getApi() {
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star"></i>              
               </div>
-              <a href="./detailed.html"><button onclick="addToCartApi(${item.id})">Details</button></a>
+              <a href="./detailed.html"><button class="button" onclick="addToCartApi(${item.id})">Details</button></a>
+              <button class="btn" onclick="adToWishlist(${item.id})"><i class="fa-solid fa-heart"></i></button>
               </div>
                 
             `;
@@ -112,26 +117,28 @@ getApi();
 
 
 const getDataDiv = document.getElementById('getDataDiv')
-
+limit = 9
+page = 1
 
 async function getData() {
     try {
-        const response = await axios.get('https://65685f8d9927836bd974aa4c.mockapi.io/pradacts');
+        const response = await axios.get(`https://65685f8d9927836bd974aa4c.mockapi.io/pradacts?page=${page}&limit=${limit}`);
         const data = response.data;
         db = data;
 
         db.forEach(item => {
             const box = document.createElement('div');
-            box.className = 'myBox col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6';
+            box.className = 'myBox col-xl-4 col-lg-2 col-md-2 col-sm-6 col-6';
             box.innerHTML = `
               <div class="div">
               <img src="${item.image}" alt="">
-              <h5>₹${item.price}</h5>
+              <h5>${item.discount}</h5>
               <div>
               <p>Lowest Price</p>
               <i class="fa-solid fa-arrow-trend-down"></i>
               </div>
-              <a href="./detailed.html"><button onclick="addToData(${item.id})">Details</button></a>
+              <a href="./detailed.html"><button class="button" onclick="addToData(${item.id})">Details</button></a>
+              <button class="btn" onclick="adToWishlist(${item.id})"><i class="fa-solid fa-heart"></i></button>
               </div>
                 
             `;

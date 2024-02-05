@@ -20,217 +20,6 @@ body {
   width: 95%;
 }
 
-#holidays {
-  width: 100%;
-  min-height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#holidays .holidays {
-  width: 95%;
-}
-#holidays .holidays .ideas {
-  margin-top: 20px;
-  transition: transform 0.3s ease;
-  position: relative;
-}
-#holidays .holidays .ideas:hover {
-  transform: scale(1.1);
-}
-#holidays .holidays .ideas img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-#girlAndBoyCollection {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  padding-top: 30px;
-}
-#girlAndBoyCollection .girlAndBoyCollection {
-  width: 95%;
-  background-color: white;
-}
-#girlAndBoyCollection .girlAndBoyCollection .girlAndBoy img {
-  width: 100%;
-  margin-bottom: 30px;
-  border-radius: 10px;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 20px;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox {
-  text-align: center;
-  color: #7A4D9E;
-  font-family: Assistant;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div {
-  width: 100%;
-  margin-bottom: 20px;
-  border: 0.3px solid rgb(182, 182, 182);
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div:hover {
-  transform: scale(1.1);
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div img {
-  width: 100%;
-  height: 168px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div div i {
-  color: #FFC000;
-  font-size: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div div p {
-  color: #FFC000;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div button {
-  width: 100px;
-  min-height: 35px;
-  border-radius: 10px;
-  background-color: #7A4D9E;
-  color: white;
-  border: 2px solid white;
-  margin-bottom: 10px;
-}
-#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div button:hover {
-  background-color: transparent;
-  color: #7A4D9E;
-  border: 2px solid #7A4D9E;
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 1201px) {
-  #girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div img {
-    height: 80px;
-  }
-}
-#coupon {
-  width: 100%;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#coupon .coupon {
-  width: 95%;
-}
-#coupon .coupon .collactibles {
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-family: Assistant;
-  color: #7A4D9E;
-}
-#coupon .coupon img {
-  width: 100%;
-  margin-top: 20px;
-}
-
-#catagory {
-  width: 100%;
-  min-height: 1300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#catagory .catagory {
-  width: 95%;
-}
-#catagory .catagory .ideas {
-  margin-top: 20px;
-  transition: transform 0.3s ease;
-  position: relative;
-}
-#catagory .catagory .ideas:hover {
-  transform: scale(1.1);
-}
-#catagory .catagory .ideas img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-#newDesign {
-  width: 100%;
-  min-height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  margin-bottom: 30px;
-}
-#newDesign .newDesign {
-  width: 95%;
-}
-#newDesign .newDesign .clothesAndElectronica {
-  width: 100%;
-  border: 0.3px solid rgb(178, 178, 178);
-  border-radius: 10px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-#newDesign .newDesign .clothesAndElectronica img {
-  width: 100%;
-  height: 200px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-#newDesign .newDesign .clothesAndElectronica h5 {
-  color: #7A4D9E;
-  font-family: Assistant;
-}
-#newDesign .newDesign .clothesAndElectronica h6 {
-  color: #7A4D9E;
-  font-family: Assistant;
-}
-#newDesign .newDesign .clothesCarousel {
-  margin-top: 20px;
-  width: 100%;
-  min-height: 540px;
-}
-#newDesign .newDesign .clothesCarousel img {
-  width: 100%;
-  height: 540px;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 721px) and (min-width: 541px) {
-  #newDesign .newDesign .clothesCarousel img {
-    min-height: 400px;
-  }
-}
-@media screen and (max-width: 540px) {
-  #newDesign .newDesign .clothesCarousel img {
-    min-height: 300px;
-  }
-}
 #data {
   width: 100%;
   min-height: 450px;
@@ -299,7 +88,7 @@ body {
   color: #FFC000;
   font-size: 10px;
 }
-#data .prodacts #myApi .myBox .div button {
+#data .prodacts #myApi .myBox .div .button {
   width: 100px;
   min-height: 35px;
   border-radius: 10px;
@@ -308,11 +97,44 @@ body {
   border: 2px solid white;
   margin-bottom: 10px;
 }
-#data .prodacts #myApi .myBox .div button:hover {
+#data .prodacts #myApi .myBox .div .button:hover {
   background-color: transparent;
   color: #7A4D9E;
   border: 2px solid #7A4D9E;
   transform: scale(1.1);
+}
+#data .prodacts #myApi .myBox .div .btn {
+  border: none;
+  color: red;
+  font-size: 25px;
+}
+#data .prodacts #myApi .myBox .div .btn:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+#holidays {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#holidays .holidays {
+  width: 95%;
+}
+#holidays .holidays .ideas {
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+#holidays .holidays .ideas:hover {
+  transform: scale(1.1);
+}
+#holidays .holidays .ideas img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 #animationClothes {
@@ -392,6 +214,318 @@ body {
     background-position: 0% 0%;
   }
 }
+#coupon {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#coupon .coupon {
+  width: 95%;
+}
+#coupon .coupon .collactibles {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: Assistant;
+  color: #7A4D9E;
+}
+#coupon .coupon img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#girlAndBoyCollection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding-top: 30px;
+}
+#girlAndBoyCollection .girlAndBoyCollection {
+  width: 95%;
+  background-color: white;
+}
+#girlAndBoyCollection .girlAndBoyCollection .girlAndBoy img {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox {
+  text-align: center;
+  color: #7A4D9E;
+  font-family: Assistant;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0.3px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div:hover {
+  transform: scale(1.1);
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div img {
+  width: 100%;
+  height: 147px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div div i {
+  color: #FFC000;
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div div p {
+  color: #FFC000;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div .button {
+  width: 100px;
+  min-height: 35px;
+  border-radius: 10px;
+  background-color: #7A4D9E;
+  color: white;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div .button:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.1);
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div .btn {
+  border: none;
+  color: red;
+  font-size: 25px;
+}
+#girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div .btn:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+@media screen and (max-width: 1201px) {
+  #girlAndBoyCollection .girlAndBoyCollection #getDataDiv .myBox .div img {
+    height: 80px;
+  }
+}
+#catagory {
+  width: 100%;
+  min-height: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#catagory .catagory {
+  width: 95%;
+}
+#catagory .catagory .ideas {
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+#catagory .catagory .ideas:hover {
+  transform: scale(1.1);
+}
+#catagory .catagory .ideas img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#newDesign {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 30px;
+}
+#newDesign .newDesign {
+  width: 95%;
+}
+#newDesign .newDesign .clothesAndElectronica {
+  width: 100%;
+  border: 0.3px solid rgb(178, 178, 178);
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#newDesign .newDesign .clothesAndElectronica img {
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#newDesign .newDesign .clothesAndElectronica h5 {
+  color: #7A4D9E;
+  font-family: Assistant;
+}
+#newDesign .newDesign .clothesAndElectronica h6 {
+  color: #7A4D9E;
+  font-family: Assistant;
+}
+#newDesign .newDesign .clothesCarousel {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 540px;
+}
+#newDesign .newDesign .clothesCarousel img {
+  width: 100%;
+  height: 540px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 721px) and (min-width: 541px) {
+  #newDesign .newDesign .clothesCarousel img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #newDesign .newDesign .clothesCarousel img {
+    height: 300px;
+  }
+}
+#prodacts {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prodacts .prodacts {
+  width: 95%;
+  padding-left: 20px;
+}
+#prodacts .prodacts #btn {
+  border-radius: 10px;
+  font-family: Assistant;
+  background-color: #7A4D9E;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 130px;
+  min-height: 35px;
+  border: none;
+}
+#prodacts .prodacts #btn i {
+  color: white;
+  margin-left: 10px;
+}
+#prodacts .prodacts #btn:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.3);
+}
+#prodacts .prodacts #myBtn {
+  border-radius: 10px;
+  font-family: Assistant;
+  background-color: #7A4D9E;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 130px;
+  min-height: 35px;
+  border: none;
+}
+#prodacts .prodacts #myBtn i {
+  color: white;
+  margin-left: 10px;
+}
+#prodacts .prodacts #myBtn:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.3);
+}
+#prodacts .prodacts #myDiv {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#prodacts .prodacts #myDiv .myBox {
+  text-align: center;
+  color: #7A4D9E;
+  font-family: Assistant;
+  margin-top: 20px;
+}
+#prodacts .prodacts #myDiv .myBox .div {
+  width: 100%;
+  border: 0.3px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#prodacts .prodacts #myDiv .myBox .div:hover {
+  transform: scale(1.1);
+}
+#prodacts .prodacts #myDiv .myBox .div img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#prodacts .prodacts #myDiv .myBox .div div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#prodacts .prodacts #myDiv .myBox .div div i {
+  color: #FFC000;
+  font-size: 10px;
+}
+#prodacts .prodacts #myDiv .myBox .div .button {
+  width: 100px;
+  min-height: 35px;
+  border-radius: 10px;
+  background-color: #7A4D9E;
+  color: white;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+#prodacts .prodacts #myDiv .myBox .div .button:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.1);
+}
+#prodacts .prodacts #myDiv .myBox .div .btn {
+  border: none;
+  color: red;
+  font-size: 25px;
+}
+#prodacts .prodacts #myDiv .myBox .div .btn:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
 #genres {
   width: 100%;
   height: auto;
@@ -479,90 +613,6 @@ img {
   background: #1c376c;
   color: #fff;
   border-color: #ffffff;
-}
-
-#prodacts {
-  width: 100%;
-  min-height: 900px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#prodacts .prodacts {
-  width: 95%;
-  padding-left: 20px;
-}
-#prodacts .prodacts #btn {
-  border-radius: 10px;
-  font-family: Assistant;
-  background-color: #7A4D9E;
-  color: white;
-  font-weight: 800;
-  margin-top: 20px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-  width: 130px;
-  min-height: 35px;
-  border: none;
-}
-#prodacts .prodacts #btn i {
-  color: white;
-  margin-left: 10px;
-}
-#prodacts .prodacts #btn:hover {
-  background-color: transparent;
-  color: #7A4D9E;
-  border: 2px solid #7A4D9E;
-  transform: scale(1.3);
-}
-#prodacts .prodacts #myDiv {
-  width: 100%;
-  margin-bottom: 20px;
-}
-#prodacts .prodacts #myDiv .myBox {
-  text-align: center;
-  color: #7A4D9E;
-  font-family: Assistant;
-  margin-top: 20px;
-}
-#prodacts .prodacts #myDiv .myBox .div {
-  width: 100%;
-  border: 0.3px solid rgb(182, 182, 182);
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-}
-#prodacts .prodacts #myDiv .myBox .div:hover {
-  transform: scale(1.1);
-}
-#prodacts .prodacts #myDiv .myBox .div img {
-  width: 100%;
-  height: 180px;
-  margin-bottom: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-#prodacts .prodacts #myDiv .myBox .div div {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#prodacts .prodacts #myDiv .myBox .div div i {
-  color: #FFC000;
-  font-size: 10px;
-}
-#prodacts .prodacts #myDiv .myBox .div button {
-  width: 100px;
-  min-height: 35px;
-  border-radius: 10px;
-  background-color: #7A4D9E;
-  color: white;
-  border: 2px solid white;
-  margin-bottom: 10px;
-}
-#prodacts .prodacts #myDiv .myBox .div button:hover {
-  background-color: transparent;
-  color: #7A4D9E;
-  border: 2px solid #7A4D9E;
-  transform: scale(1.1);
 }
 
 footer {
@@ -674,4 +724,341 @@ footer .footer-bottom {
 }
 footer .open-hours hr {
   margin: 30px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#prodact {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-family: Assistant;
+  color: #7A4D9E;
+}
+#prodact #detailDiv {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prodact #detailDiv .box {
+  width: 100%;
+}
+#prodact #detailDiv .box .imges {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prodact #detailDiv .box .imges img {
+  width: 75%;
+}
+#prodact #detailDiv .box .imges img:hover {
+  transform: scale(1.05);
+}
+#prodact #detailDiv .box .detailes {
+  width: 100%;
+}
+#prodact #detailDiv .box .detailes .iii {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: 0.3px solid rgb(182, 182, 182);
+  color: #FFC000;
+}
+#prodact #detailDiv .box .detailes .h5h5 {
+  width: 60%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+#prodact #detailDiv .box .detailes .h5h5 strong {
+  font-size: 30px;
+  color: #7A4D9E;
+  font-weight: 700;
+  font-family: Assistant;
+}
+#prodact #detailDiv .box .detailes .discount {
+  width: 100%;
+  min-height: 100px;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-top: 0.3px solid rgb(182, 182, 182);
+}
+#prodact #detailDiv .box .detailes .discount strong {
+  font-size: 30px;
+  color: #7A4D9E;
+  font-weight: 700;
+  font-family: Assistant;
+}
+#prodact #detailDiv .box .detailes .price {
+  width: 100%;
+  min-height: 100px;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-top: 0.3px solid rgb(182, 182, 182);
+}
+#prodact #detailDiv .box .detailes .price strong {
+  font-size: 30px;
+  color: #7A4D9E;
+  font-weight: 700;
+  font-family: Assistant;
+}
+#prodact #detailDiv .box .detailes .button {
+  width: 100%;
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+}
+#prodact #detailDiv .box .detailes .button button {
+  width: 80%;
+  min-height: 50px;
+  border: none;
+  background-color: #7A4D9E;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: Assistant;
+  font-weight: 800;
+}
+#prodact #detailDiv .box .detailes .button button:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  #prodact #detailDiv .box .imges img {
+    width: 100%;
+  }
+  #prodact #detailDiv .box .detailes .iii {
+    min-height: 80px;
+    font-size: 10px;
+  }
+  #prodact #detailDiv .box .detailes .h5h5 {
+    font-size: 20px;
+    min-height: 130px;
+    width: 100%;
+  }
+  #prodact #detailDiv .box .detailes .h5h5 strong {
+    font-size: 30px;
+  }
+  #prodact #detailDiv .box .detailes .discount {
+    font-size: 20px;
+    min-height: 90px;
+  }
+  #prodact #detailDiv .box .detailes .discount strong {
+    font-size: 30px;
+  }
+  #prodact #detailDiv .box .detailes .price {
+    font-size: 20px;
+    min-height: 90px;
+  }
+  #prodact #detailDiv .box .detailes .price strong {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 722px) {
+  #prodact #detailDiv .box .imges img {
+    width: 100%;
+    height: 440px;
+  }
+  #prodact #detailDiv .box .detailes h3 {
+    font-size: 30px;
+  }
+  #prodact #detailDiv .box .detailes .h5h5 {
+    font-size: 10px;
+    min-height: 110px;
+  }
+  #prodact #detailDiv .box .detailes .h5h5 strong {
+    font-size: 20px;
+  }
+  #prodact #detailDiv .box .detailes .discount {
+    font-size: 10px;
+    min-height: 50px;
+  }
+  #prodact #detailDiv .box .detailes .discount strong {
+    font-size: 20px;
+  }
+  #prodact #detailDiv .box .detailes .price {
+    font-size: 10px;
+    min-height: 50px;
+  }
+  #prodact #detailDiv .box .detailes .price strong {
+    font-size: 20px;
+  }
+  #prodact #detailDiv .box .detailes .button {
+    min-height: 50px;
+  }
+  #prodact #detailDiv .box .detailes .button button {
+    min-height: 30px;
+  }
+}
+@media screen and (max-width: 721px) and (min-width: 542px) {
+  #prodact #detailDiv .box .imges img {
+    width: 100%;
+    height: 500px;
+  }
+  #prodact #detailDiv .box .detailes .iii {
+    min-height: 50px;
+    font-size: 20px;
+  }
+  #prodact #detailDiv .box .detailes h3 {
+    font-size: 25px;
+  }
+  #prodact #detailDiv .box .detailes .h5h5 {
+    font-size: 10px;
+    min-height: 110px;
+  }
+  #prodact #detailDiv .box .detailes .h5h5 strong {
+    font-size: 20px;
+  }
+  #prodact #detailDiv .box .detailes .discount {
+    font-size: 10px;
+    min-height: 30px;
+  }
+  #prodact #detailDiv .box .detailes .discount strong {
+    font-size: 20px;
+  }
+  #prodact #detailDiv .box .detailes .price {
+    font-size: 10px;
+    min-height: 30px;
+  }
+  #prodact #detailDiv .box .detailes .price strong {
+    font-size: 20px;
+  }
+  #prodact #detailDiv .box .detailes .button {
+    min-height: 50px;
+    font-size: 10px;
+  }
+  #prodact #detailDiv .box .detailes .button button {
+    min-height: 25px;
+  }
+}
+#pro {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pro .pro {
+  width: 95%;
+  padding-left: 20px;
+}
+#pro .pro #btn {
+  border-radius: 10px;
+  font-family: Assistant;
+  background-color: #7A4D9E;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 130px;
+  min-height: 35px;
+  border: none;
+}
+#pro .pro #btn i {
+  color: white;
+  margin-left: 10px;
+}
+#pro .pro #btn:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.3);
+}
+#pro .pro #myBtn {
+  border-radius: 10px;
+  font-family: Assistant;
+  background-color: #7A4D9E;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 130px;
+  min-height: 35px;
+  border: none;
+}
+#pro .pro #myBtn i {
+  color: white;
+  margin-left: 10px;
+}
+#pro .pro #myBtn:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.3);
+}
+#pro .pro .prodacts {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#pro .pro .prodacts .myBox {
+  text-align: center;
+  color: #7A4D9E;
+  font-family: Assistant;
+  margin-top: 20px;
+}
+#pro .pro .prodacts .myBox .div {
+  width: 100%;
+  border: 0.3px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#pro .pro .prodacts .myBox .div:hover {
+  transform: scale(1.1);
+}
+#pro .pro .prodacts .myBox .div img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#pro .pro .prodacts .myBox .div div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#pro .pro .prodacts .myBox .div div i {
+  color: #FFC000;
+  font-size: 10px;
+}
+#pro .pro .prodacts .myBox .div .button {
+  width: 100px;
+  min-height: 35px;
+  border-radius: 10px;
+  background-color: #7A4D9E;
+  color: white;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+#pro .pro .prodacts .myBox .div .button:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.1);
+}
+#pro .pro .prodacts .myBox .div .btn {
+  border: none;
+  color: red;
+  font-size: 25px;
+}
+#pro .pro .prodacts .myBox .div .btn:hover {
+  transform: scale(1.1);
+  color: black;
 }

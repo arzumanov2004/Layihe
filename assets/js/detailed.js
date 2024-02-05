@@ -11,15 +11,36 @@ function getProducts() {
 
     cart.map(item => {
         const box = document.createElement('div');
-        box.className = "box col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3";
+        box.className = "box row";
         box.innerHTML = `
-            <img src="${item.image}" alt="">
-            <p>${item.title}</p>
-            <p>${item.price}</p>
-            <div class="btndiv">
-            <button onclick="addtowishlist(${item.id})">Wishlist<i class="fa-brands fa-shopify"></i></button>
-
-                <button onclick="addToBasket(${item.id})">Add to Basket<i class="fa-brands fa-shopify"></i></button>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="imges">
+                <img src="${item.image}" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="detailes">
+                    <h3>${item.name}</h3>
+                    <div class="iii">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>              
+                    </div>
+                    <div class="h5h5">
+                        <h5><strong>About The Product :</strong> ${item.description}</h5>
+                    </div>
+                    <div class="discount">
+                        <h5><strong>About The Product :</strong>${item.discount}</h5>
+                    </div>
+                    <div class="price">
+                        <h4><strong>The Price Of The Product :</strong> ₹ ${item.price}</h4>
+                    </div>
+                    <div class="button">
+                        <button onclick="addToBasket(${item.id})">Add to Basket</button>
+                    </div>
+                </div>
             </div>
         `;
         detailDiv.appendChild(box);
