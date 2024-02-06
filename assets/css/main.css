@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1061,4 +1062,355 @@ footer .open-hours hr {
 #pro .pro .prodacts .myBox .div .btn:hover {
   transform: scale(1.1);
   color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#Wishlist {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Wishlist .Wishlist {
+  width: 90%;
+}
+#Wishlist .Wishlist .myBox {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding-top: 30px;
+  box-shadow: 0 0 10px 20px rgba(171, 171, 171, 0.3);
+}
+#Wishlist .Wishlist .myBox .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Wishlist .Wishlist .myBox .img img {
+  width: 80%;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 1s ease; /* Animasyon süresi ve geçiş tipi */
+}
+#Wishlist .Wishlist .myBox .img img:hover {
+  transform: rotate(360deg); /* Hover durumunda resmi 45 derece döndürme */
+}
+#Wishlist .Wishlist .myBox .colll {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-weight: 800;
+}
+#Wishlist .Wishlist .myBox .colll .details {
+  min-height: 200px;
+  width: 95%;
+}
+#Wishlist .Wishlist .myBox .colll .h5h5 {
+  width: 60%;
+  font-family: Assistant;
+}
+#Wishlist .Wishlist .myBox .colll .iii {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #FFC000;
+}
+#Wishlist .Wishlist .myBox .colll .discount {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  font-family: Assistant;
+}
+#Wishlist .Wishlist .myBox .colll .discount strong {
+  font-weight: 800;
+  color: #7A4D9E;
+}
+#Wishlist .Wishlist .myBox .colll .price {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  font-family: Assistant;
+}
+#Wishlist .Wishlist .myBox .colll .price strong {
+  font-weight: 800;
+  color: #7A4D9E;
+}
+#Wishlist .Wishlist .myBox .colll h4 {
+  color: #7A4D9E;
+  font-family: Assistant;
+}
+#Wishlist .Wishlist .myBox .colll .btn {
+  width: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#Wishlist .Wishlist .myBox .colll .btn button {
+  width: 80px;
+  min-height: 35px;
+  border: none;
+  background-color: #7A4D9E;
+  color: white;
+  border-radius: 10px;
+  font-family: Assistant;
+  font-weight: 800;
+}
+#Wishlist .Wishlist .myBox .colll .btn button:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.05);
+}
+#Wishlist .Wishlist .myBox .button {
+  width: 95%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-top: 0.2px solid rgb(182, 182, 182);
+  margin-top: 20px;
+}
+#Wishlist .Wishlist .myBox .button button {
+  width: 30%;
+  min-height: 40px;
+  border: none;
+  background-color: #7A4D9E;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: Assistant;
+  font-weight: 800;
+}
+#Wishlist .Wishlist .myBox .button button:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  #Wishlist .Wishlist .myBox .img img {
+    width: 100%;
+    height: 170px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .iii {
+    min-height: 30px;
+    font-size: 10px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .btn {
+    width: 60%;
+  }
+  #Wishlist .Wishlist .myBox .colll .details h4 {
+    font-size: 30px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .price {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 722px) {
+  #Wishlist .Wishlist .myBox .img img {
+    width: 100%;
+    height: 150px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .iii {
+    min-height: 30px;
+    font-size: 10px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .btn {
+    width: 67%;
+  }
+  #Wishlist .Wishlist .myBox .colll .details h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 721px) and (min-width: 542px) {
+  #Wishlist .Wishlist .myBox .img img {
+    width: 100%;
+    height: 130px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .iii {
+    min-height: 30px;
+    font-size: 10px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .btn {
+    width: 95%;
+  }
+  #Wishlist .Wishlist .myBox .colll .details h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 541px) and (min-width: 300px) {
+  #Wishlist .Wishlist .myBox .img img {
+    width: 100%;
+    height: 100px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .iii {
+    min-height: 30px;
+    font-size: 10px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .btn {
+    width: 100%;
+  }
+  #Wishlist .Wishlist .myBox .colll .details h4 {
+    font-size: 15px;
+  }
+  #Wishlist .Wishlist .myBox .colll .details .price {
+    font-size: 15px;
+  }
+}
+#pro {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pro .pro {
+  width: 95%;
+  padding-left: 20px;
+}
+#pro .pro #btn {
+  border-radius: 10px;
+  font-family: Assistant;
+  background-color: #7A4D9E;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 130px;
+  min-height: 35px;
+  border: none;
+}
+#pro .pro #btn i {
+  color: white;
+  margin-left: 10px;
+}
+#pro .pro #btn:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.3);
+}
+#pro .pro #myBtn {
+  border-radius: 10px;
+  font-family: Assistant;
+  background-color: #7A4D9E;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 130px;
+  min-height: 35px;
+  border: none;
+}
+#pro .pro #myBtn i {
+  color: white;
+  margin-left: 10px;
+}
+#pro .pro #myBtn:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.3);
+}
+#pro .pro .prodacts {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#pro .pro .prodacts .myBox {
+  text-align: center;
+  color: #7A4D9E;
+  font-family: Assistant;
+  margin-top: 20px;
+}
+#pro .pro .prodacts .myBox .div {
+  width: 100%;
+  border: 0.3px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+#pro .pro .prodacts .myBox .div:hover {
+  transform: scale(1.1);
+}
+#pro .pro .prodacts .myBox .div img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#pro .pro .prodacts .myBox .div div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#pro .pro .prodacts .myBox .div div i {
+  color: #FFC000;
+  font-size: 10px;
+}
+#pro .pro .prodacts .myBox .div .button {
+  width: 100px;
+  min-height: 35px;
+  border-radius: 10px;
+  background-color: #7A4D9E;
+  color: white;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+#pro .pro .prodacts .myBox .div .button:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.1);
+}
+#pro .pro .prodacts .myBox .div .btn {
+  border: none;
+  color: red;
+  font-size: 25px;
+}
+#pro .pro .prodacts .myBox .div .btn:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+#loginRegstr {
+  width: 100%;
+  min-height: 600px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loginRegstr .loginRegstr {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loginRegstr .loginRegstr .ggggg {
+  width: 100%;
+  background-color: transparent;
+}
+#loginRegstr .loginRegstr .ggggg .h2h2 {
+  width: 100%;
+}
+#loginRegstr .loginRegstr .ggggg .h2h2 h2 {
+  font-family: Assistant;
+  font-weight: 800;
+  color: #7A4D9E;
+}
+#loginRegstr .loginRegstr .ggggg label {
+  color: #7A4D9E;
+  font-family: Assistant;
+  font-size: 25px;
 }

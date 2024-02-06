@@ -1,0 +1,31 @@
+#loginRegstr{
+    width: 100%;
+    min-height: 600px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loginRegstr{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ggggg{
+            width: 100%;
+            background-color: transparent;
+            .h2h2{
+                width: 100%;
+                h2{
+                    font-family: Assistant;
+                    font-weight: 800;
+                    color: #7A4D9E;
+                }
+            }
+            label{
+                color: #7A4D9E;
+                font-family: Assistant;
+                font-size: 25px;
+            }
+        }
+    }
+}

@@ -38,6 +38,22 @@ async function getProducts() {
     }
 }
 myBtn.addEventListener('click',getProducts)
+function adToWishlist(id) {
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    let productItem = db.find(item => item.id == id);
+    if (productItem) {
+        let existingItem = wishlist.find(item => item.id == id);
+        if (!existingItem) {
+            wishlist.push(productItem);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            console.log('Ürün favorilere eklendi:', productItem.name);
+        } else {
+            alert('Bu ürün zaten favorilerinizde!');
+        }
+    } else {
+        console.error('Ürün bulunamadı.');
+    }
+}
 function addToCart(id) {
     // Önceki sepet verilerini al
     let existingCart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -85,7 +101,7 @@ async function getApi() {
               <i class="fa-regular fa-star"></i>              
               </div>
               <a href="./detailed.html"><button class="button" onclick="addToCartApi(${item.id})">Details</button></a>
-              <button class="btn" onclick="adToWishlist(${item.id})"><i class="fa-solid fa-heart"></i></button>
+              <button class="btn" onclick="adToWishlist2(${item.id})"><i class="fa-solid fa-heart"></i></button>
               </div>
                 
             `;
@@ -97,6 +113,22 @@ async function getApi() {
     }
 }
 btn.addEventListener('click',getApi)
+function adToWishlist2(id) {
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    let productItem = db.find(item => item.id == id);
+    if (productItem) {
+        let existingItem = wishlist.find(item => item.id == id);
+        if (!existingItem) {
+            wishlist.push(productItem);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            console.log('Ürün favorilere eklendi:', productItem.name);
+        } else {
+            alert('Bu ürün zaten favorilerinizde!');
+        }
+    } else {
+        console.error('Ürün bulunamadı.');
+    }
+}
 function addToCartApi(id) {
     // Önceki sepet verilerini al
     let existingCart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -138,7 +170,7 @@ async function getData() {
               <i class="fa-solid fa-arrow-trend-down"></i>
               </div>
               <a href="./detailed.html"><button class="button" onclick="addToData(${item.id})">Details</button></a>
-              <button class="btn" onclick="adToWishlist(${item.id})"><i class="fa-solid fa-heart"></i></button>
+              <button class="btn" onclick="adToWishlist3(${item.id})"><i class="fa-solid fa-heart"></i></button>
               </div>
                 
             `;
@@ -148,7 +180,22 @@ async function getData() {
         console.error('Error:', error);
     }
 }
-
+function adToWishlist3(id) {
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    let productItem = db.find(item => item.id == id);
+    if (productItem) {
+        let existingItem = wishlist.find(item => item.id == id);
+        if (!existingItem) {
+            wishlist.push(productItem);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            console.log('Ürün favorilere eklendi:', productItem.name);
+        } else {
+            alert('Bu ürün zaten favorilerinizde!');
+        }
+    } else {
+        console.error('Ürün bulunamadı.');
+    }
+}
 function addToData(id) {
     // Önceki sepet verilerini al
     let existingCart = JSON.parse(localStorage.getItem('cart')) || [];
