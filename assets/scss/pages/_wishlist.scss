@@ -10,6 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('https://i.pinimg.com/564x/42/57/32/425732e7817b4ca776ebf2e8b8115998.jpg');
     .Wishlist{
         width: 90%;
         .myBox{
@@ -17,6 +20,7 @@
             margin-bottom: 30px;
             border-radius: 10px;
             padding-top: 30px;
+            background-color: rgba($color: white, $alpha: 0.9);
             box-shadow: 0 0 10px 20px rgba($color: #ababab, $alpha: 0.3);
             .img{
                 display: flex;
