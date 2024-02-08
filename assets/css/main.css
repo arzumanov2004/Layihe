@@ -1064,6 +1064,123 @@ footer .open-hours hr {
   color: black;
 }
 
+#comment {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+}
+#comment .kkmkmmk {
+  width: 95%;
+}
+#comment .kkmkmmk .comment {
+  width: 100%;
+}
+#comment .kkmkmmk .comment .productEvaluation {
+  width: 100%;
+  min-height: 100px;
+  font-family: Assistant;
+  color: #7A4D9E;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+#comment .kkmkmmk .comment .h2i {
+  width: 100%;
+  min-height: 100px;
+  border: 0.3px solid rgb(192, 192, 192);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 20px;
+}
+#comment .kkmkmmk .comment .h2i i {
+  color: #FFC000;
+}
+#comment .kkmkmmk #nameBookMessage {
+  width: 100%;
+  min-height: 400px;
+}
+#comment .kkmkmmk #nameBookMessage #chat-window {
+  width: 100%;
+  min-height: 300px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 0.3px solid rgb(192, 192, 192);
+  border-left: 0.3px solid rgb(192, 192, 192);
+  border-right: 0.3px solid rgb(192, 192, 192);
+}
+#comment .kkmkmmk #nameBookMessage #chat-window .commentDiv .div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#comment .kkmkmmk #nameBookMessage #chat-window .commentDiv .commentBtn {
+  border: none;
+  color: #7A4D9E;
+  background-color: white;
+}
+#comment .kkmkmmk #nameBookMessage #chat-window .commentDiv .commentBtn:hover {
+  color: black;
+  font-weight: 800;
+}
+#comment .kkmkmmk #nameBookMessage #chat-window .commentDiv .likeBtn {
+  border: none;
+  background-color: white;
+}
+#comment .kkmkmmk #nameBookMessage .nameBookMessage {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.3px solid rgb(192, 192, 192);
+  border-left: 0.3px solid rgb(192, 192, 192);
+  border-right: 0.3px solid rgb(192, 192, 192);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 20px;
+  background-color: white;
+}
+#comment .kkmkmmk #nameBookMessage .nameBookMessage div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: Assistant;
+}
+#comment .kkmkmmk #nameBookMessage .nameBookMessage div #name {
+  width: 250px;
+  min-height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0.3px solid rgb(192, 192, 192);
+}
+#comment .kkmkmmk #nameBookMessage .nameBookMessage div #book {
+  border: 0.3px solid rgb(192, 192, 192);
+}
+#comment .kkmkmmk #nameBookMessage .nameBookMessage div #message {
+  border: 0.3px solid rgb(192, 192, 192);
+}
+#comment .kkmkmmk #nameBookMessage .nameBookMessage div #bb {
+  width: 80px;
+  min-height: 40px;
+  border: none;
+  background-color: #7A4D9E;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: Assistant;
+}
+#comment .kkmkmmk #nameBookMessage .nameBookMessage div #bb:hover {
+  background-color: transparent;
+  color: #7A4D9E;
+  border: 2px solid #7A4D9E;
+  transform: scale(1.05);
+}
+
 * {
   margin: 0;
   padding: 0;

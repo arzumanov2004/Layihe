@@ -72,7 +72,8 @@ function addToCart(id) {
 getProducts();
 
 
-
+const inp = document.getElementById('inp')
+const searc = document.getElementById('searc')
 const myApi = document.getElementById('myApi');
 const btn = document.getElementById('btn')
 limit = 6
@@ -147,6 +148,42 @@ function addToCartApi(id) {
 getApi();
 
 
+//search by name
+
+
+function searchByName() {
+    myApi.innerHTML = ''
+    axios.get('https://65685f8d9927836bd974aa4c.mockapi.io/pradacts')
+    .then(res =>{
+        db = res.data
+        const filterData = db.filter(item => item.name.toLowerCase().startsWith(inp.value.toLowerCase()))
+        filterData.map(item =>{
+            const box = document.createElement('div');
+            box.className = 'myBox col-xl-2 col-lg-3 col-md-4 col-sm-4 col-12';
+            box.innerHTML = `
+              <div class="div">
+              <img src="${item.image}" alt="">
+              <h6>${item.name}</h6>
+              <h5>${item.discount}</h5>
+              <h6>₹${item.price}</h6>
+              <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>              
+              </div>
+              <a href="./detailed.html"><button class="button" onclick="addToCartApi(${item.id})">Details</button></a>
+              <button class="btn" onclick="adToWishlist2(${item.id})"><i class="fa-solid fa-heart"></i></button>
+              </div>
+                
+            `;
+            myApi.appendChild(box)
+        })
+    })
+}
+searc.addEventListener('click',searchByName)
+
 
 const getDataDiv = document.getElementById('getDataDiv')
 limit = 9
@@ -212,3 +249,85 @@ function addToData(id) {
 }
 
 getData();
+
+
+// // sort a-z z-a azdan-coxa coxdan-aza default
+// const btnAZ = document.getElementById('btnAZ')
+// const btnZA = document.getElementById('btnZA')
+// const yenile = document.getElementById('default')
+
+
+// //Sort A-Z
+
+// function sortAZ() {
+//     myApi.innerHTML = ''
+//     axios.get('https://65685f8d9927836bd974aa4c.mockapi.io/pradacts')
+//     .then(res =>{
+//         db = res.data
+//         const sortData = db.sort((a,b) => a.title.localeCompare(b.title))
+//         sortData.map(item =>{
+//             const box = document.createElement('div');
+//             box.className = 'myBox col-xl-2 col-lg-3 col-md-4 col-sm-4 col-12';
+//             box.innerHTML = `
+//               <div class="div">
+//               <img src="${item.image}" alt="">
+//               <h6>${item.name}</h6>
+//               <h5>${item.discount}</h5>
+//               <h6>₹${item.price}</h6>
+//               <div>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-regular fa-star"></i>              
+//               </div>
+//               <a href="./detailed.html"><button class="button" onclick="addToCartApi(${item.id})">Details</button></a>
+//               <button class="btn" onclick="adToWishlist2(${item.id})"><i class="fa-solid fa-heart"></i></button>
+//               </div>
+                
+//             `;
+//             myApi.appendChild(box)
+//         })
+//     })
+// }
+// btnAZ.addEventListener('click',sortAZ)
+
+// //Sort Z-A
+
+// function sortZA() {
+//     myApi.innerHTML = ''
+//     axios.get('https://65685f8d9927836bd974aa4c.mockapi.io/pradacts')
+//     .then(res =>{
+//         db = res.data
+//         const sortData = db.sort((a,b) => b.title.localeCompare(a.title))
+//         sortData.map(item =>{
+//             const box = document.createElement('div');
+//             box.className = 'myBox col-xl-2 col-lg-3 col-md-4 col-sm-4 col-12';
+//             box.innerHTML = `
+//               <div class="div">
+//               <img src="${item.image}" alt="">
+//               <h6>${item.name}</h6>
+//               <h5>${item.discount}</h5>
+//               <h6>₹${item.price}</h6>
+//               <div>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-solid fa-star"></i>
+//               <i class="fa-regular fa-star"></i>              
+//               </div>
+//               <a href="./detailed.html"><button class="button" onclick="addToCartApi(${item.id})">Details</button></a>
+//               <button class="btn" onclick="adToWishlist2(${item.id})"><i class="fa-solid fa-heart"></i></button>
+//               </div>
+                
+//             `;
+//             myApi.appendChild(box)
+//         })
+//     })
+// }
+
+// btnZA.addEventListener('click',sortZA)
+
+// //Default
+
+// yenile.addEventListener('click',getApi)
