@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SM Shopping</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,9 +11,91 @@
 </head>
 <body>
     <header>
-
+        <div class="navDiv">
+         <nav class="navbar navbar-expand-lg navbar-light nnnnn">
+             <img src="./assets/img/Screenshot 2024-02-08 215051.png" alt="">
+             <div class="inpBtn">
+                 <input type="text" name="" id="inp" placeholder="Search By Name">
+                 <button id="searc"><i class="fa-solid fa-magnifying-glass"></i></button>
+             </div>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                 <li class="nav-item active">
+                     <i class="fa-solid fa-circle-user"></i>
+                   <a style="color: #7A4D9E; font-weight: 800;" class="nav-link" href="./login.html">Login <span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item">
+                     <i class="fa-solid fa-cart-shopping"></i>
+                   <a style="color: #7A4D9E; font-weight: 800;" class="nav-link" href="./basket.html">Basket</a>
+                 </li>
+                 <li class="nav-item">
+                     <i class="fa-solid fa-heart"></i>
+                   <a style="color: #7A4D9E; font-weight: 800;" class="nav-link" href="./wishlist.html">Wishlist</a>
+                 </li>
+                 <div class="dropdown show">
+                     <a style="background-color: white; border: none; color: #7A4D9E; font-weight: 800;" class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <i style="color: #7A4D9E; font-size: 25px;margin-right: 10px;" class="fa-solid fa-sort-down"></i>Filter
+                     </a>
+                   
+                     <div class="dropdown-menu btnDiv" aria-labelledby="dropdownMenuLink">
+                         <button id="btnZA" class="btnazza"><i class="fa-solid fa-arrow-up-z-a"></i></button>
+                         <button id="btnAZ" class="btnazza"><i class="fa-solid fa-arrow-down-z-a"></i></button>
+                         <button id="btnLitleToLot" class="btnLitleLot"><i class="fa-solid fa-arrow-up-9-1"></i></button>
+                         <button id="btnLotToLitle" class="btnLotLitle"><i class="fa-solid fa-arrow-down-9-1"></i></button>
+                         <button id="default"><i class="fa-solid fa-rotate-right"></i></button>
+                     </div>
+                 </div>
+               </ul>
+             </div>
+         </nav>
+        </div>
     </header>
     <main>
+        <section id="famouscCompanies">
+            <div class="famouscCompanies">
+                <div class="Companies">
+                    <a href="https://www.nike.com/">
+                        <img src="./assets/img/Screenshot 2024-02-09 151301.png" alt="">
+                        <p>NIKE</p>
+                    </a>
+                    <a href="https://www.rolex.com/ru">
+                        <img src="./assets/img/Screenshot 2024-02-09 151605.png" alt="">
+                        <p>ROLEX</p>
+                    </a>
+                    <a href="https://www.lg.com/us">
+                        <img src="./assets/img/Screenshot 2024-02-09 152022.png" alt="">
+                        <p>LG</p>
+                    </a>
+                    <a href="https://www.adidas.com/us">
+                        <img src="./assets/img/Screenshot 2024-02-09 151333.png" alt="">
+                        <p>ADIDAS</p>
+                    </a>
+                    <a href="https://www.apple.com/">
+                        <img src="./assets/img/Screenshot 2024-02-09 152248.png" alt="">
+                        <p>APPLE</p>
+                    </a>
+                    <a href="https://www.gucci.com/us/en/">
+                        <img src="./assets/img/Screenshot 2024-02-09 152502.png" alt="">
+                        <p>GUCCI</p>
+                    </a>
+                    <a href="https://www.defacto.com/de-de">
+                        <img src="./assets/img/Screenshot 2024-02-09 172935.png" alt="">
+                        <p>DeFacto</p>
+                    </a>
+                    <a href="https://www.casio.com/intl/">
+                        <img src="./assets/img/Screenshot 2024-02-09 173355.png" alt="">
+                        <p>CASIO</p>
+                    </a>
+                    <a href="https://us.puma.com/us/en">
+                        <img src="./assets/img/Screenshot 2024-02-09 173601.png" alt="">
+                        <p>PUMA</p>
+                    </a>
+                </div>
+            </div>
+        </section>
        <section id="loginRegstr">
         <div class="min-h-screen flex flex-col items-center justify-center bg-gray-100 loginRegstr">
             <div style="width: 100%;background-color: red;">

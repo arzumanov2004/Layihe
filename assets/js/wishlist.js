@@ -42,7 +42,24 @@ function getWishlist() {
         div.appendChild(box)
     })
 }
-
+function adToBasket(id) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const productItem = wishlist.find(item => item.id == id);
+    
+    if(productItem){
+        let cartItem = cart.find(item => item.id == id);
+        if(cartItem){
+            cartItem.count = (cartItem.count || 1) + 1;
+        } else {
+            cart.push({...productItem, count: 1});
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        console.log('Ürün sepete eklendi:', productItem.title);
+    } else {
+        console.error('Ürün favori listesinde bulunamadı.');
+    }
+}
 
 function deleteFromWishlist(index) {
     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || []
