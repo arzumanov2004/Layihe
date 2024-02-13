@@ -52,14 +52,14 @@
                 font-family: serif;
                 padding-top: 20px;
                 color: #7A4D9E;
-                #loginForm{
+                #registerForm{
                     width: 100%;
                     input{
                         width: 80%;
                         min-height: 40px;
                         border: 5px solid #7A4D9E;
                         border-radius: 10px;
-                        margin-bottom: 20px;margin-top: 10px;
+                        margin-top: 10px;
                         padding-left: 20px;
                         color: #7A4D9E;
                         font-weight: 800px;
@@ -129,7 +129,7 @@
 
                 div{
                     // height: 300px;
-                    #loginForm{
+                    #registerForm{
                         input{
                             // margin-bottom: 0px;
                             // margin-top: 5px;
@@ -161,7 +161,7 @@
 
                 div{
                     // height: 300px;
-                    #loginForm{
+                    #registerForm{
                         input{
                             // margin-bottom: 0px;
                             // margin-top: 5px;

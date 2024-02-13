@@ -1,38 +1,18 @@
-const login_email = document.getElementById('email');
-const login_sandi = document.getElementById('sandi');
-const login_button = document.getElementById('login-btn');
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("loginUsername").value;
+    var password = document.getElementById("loginPassword").value;
 
-const cek_reg_name = localStorage.getItem('register_name')
-const cek_reg_email = localStorage.getItem('register_email')
-const cek_reg_sandi = localStorage.getItem('register_sandi')
-const cek_log_email = localStorage.getItem('login_email')
-const cek_log_sandi = localStorage.getItem('login_sandi')
+    var storedUser = JSON.parse(localStorage.getItem(username));
 
-if (cek_reg_name, cek_reg_email, cek_reg_sandi, cek_log_email, cek_log_sandi != null) {
-    window.location = 'index.html'
-}
-
-login_email.value = localStorage.getItem('register_email')
-login_sandi.value = localStorage.getItem('register_sandi')
-
-login_button.addEventListener('click', function () {
-
-    const valid_email = localStorage.getItem('register_email')
-    const valid_sandi = localStorage.getItem('register_sandi')
-
-    if (login_email.value, login_sandi.value === '') {
-        alert('Data not valid ❌')
-        return false
-    }
-
-    if (login_email.value != valid_email || login_sandi.value != valid_sandi) {
-        alert('Your account not found! Register Now!!')
-        return false
+    if (storedUser && storedUser.password === password) {
+        alert("Giriş başarılı. Hoş geldiniz, " + username);
+        window.location.href = "index.html";
     } else {
-        localStorage.setItem('login_email', login_email.value)
-        localStorage.setItem('login_sandi', login_sandi.value)
-        alert('Login successfuly ✅')
-        window.location = 'index.html'
+        var registerPrompt = confirm("Kaydınız bulunamadı. Kayıt olmak ister misiniz?");
+        if (registerPrompt) {
+            window.location.href = "register.html";
+        }
+        document.getElementById("loginForm").reset();
     }
-
-})
+});
