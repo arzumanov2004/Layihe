@@ -6,10 +6,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     var storedUser = JSON.parse(localStorage.getItem(username));
 
     if (storedUser && storedUser.password === password) {
-        alert("Giriş başarılı. Hoş geldiniz, " + username);
+        alert("Login successful. Welcome," + username);
         window.location.href = "index.html";
     } else {
-        var registerPrompt = confirm("Kaydınız bulunamadı. Kayıt olmak ister misiniz?");
+        var registerPrompt = confirm("Your record was not found. Would you like to register?");
         if (registerPrompt) {
             window.location.href = "register.html";
         }

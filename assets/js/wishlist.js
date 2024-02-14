@@ -55,9 +55,9 @@ function adToBasket(id) {
             cart.push({...productItem, count: 1});
         }
         localStorage.setItem('cart', JSON.stringify(cart));
-        console.log('Ürün sepete eklendi:', productItem.title);
+        console.log('Product added to cart:', productItem.title);
     } else {
-        console.error('Ürün favori listesinde bulunamadı.');
+        console.error('The product was not found in the favorites list.');
     }
 }
 

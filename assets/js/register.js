@@ -13,7 +13,7 @@ document.getElementById("registerForm").addEventListener("submit", function(even
 
     localStorage.setItem(username, JSON.stringify(user));
     
-    alert("Kaydınız başarıyla tamamlandı. Şimdi giriş yapabilirsiniz.");
+    alert("Your registration has been completed successfully. You can log in now.");
     window.location.href = "login.html";
     
     document.getElementById("registerForm").reset();

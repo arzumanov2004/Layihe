@@ -1,12 +1,12 @@
 const detailDiv = document.getElementById('detailDiv');
-let db; // db değişkenini global alanda tanımlıyoruz
+let db; 
 
 function getProducts() {
     detailDiv.innerHTML = '';
     let cart = JSON.parse(localStorage.getItem('cart'));
 
     if (!cart) {
-        cart = []; // Eğer sepette ürün yoksa boş bir dizi oluştur
+        cart = []; 
     }
 
     cart.map(item => {
@@ -56,11 +56,11 @@ function addToBasket(id) {
     if (productItem) {
         productItem.count = (productItem.count || 1) + 1;
     } else {
-        // Eğer sepet boşsa veya eklenen ürün farklı bir ürünse
+        
         if (cart.length === 0 || !cart.some(item => item.id === id)) {
             const productToAdd = db.find(item => item.id == id);
             if (productToAdd) {
-                productToAdd.count = 1; // Yeni məhsul üçün sayı təyin edin
+                productToAdd.count = 1; 
                 cart.push(productToAdd);
             } else {
                 console.error(`${id} ID-li məhsul tapılmadı.`);
@@ -69,8 +69,8 @@ function addToBasket(id) {
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
-    console.log('Cart updated:', cart); // Sepetin güncellendiğini kontrol etmek için
-    getProducts(); // Basketa əlavə edildikdə göstərilən məhsulları yeniləyin
+    console.log('Cart updated:', cart); 
+    getProducts(); 
 }
 
 

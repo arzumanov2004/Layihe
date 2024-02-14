@@ -58,7 +58,7 @@ function getTotalPrice() {
     cart.forEach(item => {
         totalPrice += item.price * item.count;
     });
-    return totalPrice.toFixed(2); // Toplam fiyatı iki ondalık basamağa yuvarla
+    return totalPrice.toFixed(2); 
 }
 
 
@@ -68,7 +68,6 @@ function showTotalPrice() {
     totalPriceDiv.textContent = `Total Price : ₹${totalPrice}`;
 }
 
-// Sepete ürün eklenince veya silince toplam fiyatı güncelle
 function updateTotalPrice() {
     showTotalPrice();
 }

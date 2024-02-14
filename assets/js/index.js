@@ -48,24 +48,24 @@ function adToWishlist(id) {
             localStorage.setItem('wishlist', JSON.stringify(wishlist));
             console.log('Ürün favorilere eklendi:', productItem.name);
         } else {
-            alert('Bu ürün zaten favorilerinizde!');
+            alert('This product is already in your favorites!');
         }
     } else {
-        console.error('Ürün bulunamadı.');
+        console.error('Product not found.');
     }
 }
 function addToCart(id) {
-    // Önceki sepet verilerini al
+
     let existingCart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Eğer başka bir ürün detayına geçiliyorsa önceki sepeti temizle
+    
     existingCart = [];
 
-    // Yeni ürünü sepete ekle
+    
     const newProduct = db.find(item => item.id == id);
     existingCart.push(newProduct);
 
-    // Güncellenmiş sepet verilerini localStorage'a kaydet
+    
     localStorage.setItem('cart', JSON.stringify(existingCart));
 }
 
@@ -124,24 +124,24 @@ function adToWishlist2(id) {
             localStorage.setItem('wishlist', JSON.stringify(wishlist));
             console.log('Ürün favorilere eklendi:', productItem.name);
         } else {
-            alert('Bu ürün zaten favorilerinizde!');
+            alert('This product is already in your favorites!');
         }
     } else {
-        console.error('Ürün bulunamadı.');
+        console.error('Product not found.');
     }
 }
 function addToCartApi(id) {
-    // Önceki sepet verilerini al
+    
     let existingCart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Eğer başka bir ürün detayına geçiliyorsa önceki sepeti temizle
+    
     existingCart = [];
 
-    // Yeni ürünü sepete ekle
+    
     const newProduct = db.find(item => item.id == id);
     existingCart.push(newProduct);
 
-    // Güncellenmiş sepet verilerini localStorage'a kaydet
+    
     localStorage.setItem('cart', JSON.stringify(existingCart));
 }
 
@@ -227,24 +227,20 @@ function adToWishlist3(id) {
             localStorage.setItem('wishlist', JSON.stringify(wishlist));
             console.log('Ürün favorilere eklendi:', productItem.name);
         } else {
-            alert('Bu ürün zaten favorilerinizde!');
+            alert('This product is already in your favorites!');
         }
     } else {
-        console.error('Ürün bulunamadı.');
+        console.error('Product not found.');
     }
 }
 function addToData(id) {
-    // Önceki sepet verilerini al
     let existingCart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Eğer başka bir ürün detayına geçiliyorsa önceki sepeti temizle
     existingCart = [];
 
-    // Yeni ürünü sepete ekle
     const newProduct = db.find(item => item.id == id);
     existingCart.push(newProduct);
 
-    // Güncellenmiş sepet verilerini localStorage'a kaydet
     localStorage.setItem('cart', JSON.stringify(existingCart));
 }
 
