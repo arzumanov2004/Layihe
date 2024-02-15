@@ -68,7 +68,6 @@
                     border-radius: 10px;
                     transition: transform 0.3s ease;
                     background-color: rgba($color: #7A4D9E, $alpha: 0.8);
-                    // animation: color-change 2s infinite alternate;
                     input{
                         width: 98%;
                         margin-bottom: 20px;
@@ -94,13 +93,7 @@
         background-position: 0% 0%;
     }
   }
-// @keyframes color-change{
-//     0%{background-color: rgba($color: #4a0086, $alpha: 0.8);}
-//     25%{background-color: rgba($color:  #6c25a5, $alpha: 0.8);}
-//     50%{background-color: rgba($color:   #7A4D9E, $alpha: 0.8);}
-//     75%{background-color: rgba($color:   #8461a0, $alpha: 0.8);}
-//     100%{background-color: rgba($color:    #dbb4fa, $alpha: 0.8);}
-// }
+
 
 #topSalesProducts{
     width: 100%;
@@ -167,8 +160,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // transition: transform 0.3s ease;
-    // animation: color-change 2s infinite alternate;
     .tableContainer{
         width: 95%;
         height: auto;
@@ -226,10 +217,3 @@
    }
    
 }
-// @keyframes color-change{
-//     0%{background-color: rgba($color: #4a0086, $alpha: 0.4);}
-//     25%{background-color: rgba($color: #6c25a5, $alpha: 0.4);}
-//     50%{background-color: rgba($color: #7A4D9E, $alpha: 0.4);}
-//     75%{background-color: rgba($color: #8461a0, $alpha: 0.4);}
-//     100%{background-color: rgba($color: #dbb4fa, $alpha: 0.4);}
-// }

@@ -63,7 +63,7 @@ function addToBasket(id) {
                 productToAdd.count = 1; 
                 cart.push(productToAdd);
             } else {
-                console.error(`${id} ID-li məhsul tapılmadı.`);
+                console.error(`${id} No ID product was found.`);
             }
         }
     }

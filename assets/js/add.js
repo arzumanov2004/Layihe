@@ -19,7 +19,6 @@ function postForm(e) {
     setTimeout(()=>{
         getForm()
     },1000)
-    getForm()
 }
 Myform.addEventListener('submit',postForm)
 
@@ -36,7 +35,7 @@ function getForm() {
             box.innerHTML = `
             <td><img src="${item.image}" alt=""></td>
             <td><h6>${item.name}</h6></td>
-            <td><h6>$${item.price}</h6></td>
+            <td><h6>₹${item.price}</h6></td>
             <td><button onclick="deleteFromForm(${item.id})">sil</button></td>
             `;
             tableDiv.appendChild(box)
@@ -72,7 +71,7 @@ function searchByName() {
             box.innerHTML = `
             <td><img src="${item.image}" alt=""></td>
             <td><h6>${item.name}</h6></td>
-            <td><h6>$${item.price}</h6></td>
+            <td><h6>₹${item.price}</h6></td>
             <td><button onclick="deleteFromForm(${item.id})">sil</button></td>
             `;
             tableDiv.appendChild(box)
@@ -85,12 +84,19 @@ searc.addEventListener('click',searchByName)
 
 
 // // sort a-z z-a azdan-coxa coxdan-aza default
+
+
+
 const btnAZ = document.getElementById('btnZA')
 const btnZA = document.getElementById('btnAZ')
 const yenile = document.getElementById('default')
 const btnLitleToLot = document.getElementById('btnLitleToLot')
 const btnLotToLitle = document.getElementById('btnLotToLitle')
+
+
+
 //Sort A-Z
+
 
 function sortAZ() {
     tableDiv.innerHTML = ''
@@ -104,7 +110,7 @@ function sortAZ() {
             box.innerHTML = `
             <td><img src="${item.image}" alt=""></td>
             <td><h6>${item.name}</h6></td>
-            <td><h6>$${item.price}</h6></td>
+            <td><h6>₹${item.price}</h6></td>
             <td><button onclick="deleteFromForm(${item.id})">sil</button></td>
             `;
             tableDiv.appendChild(box)
@@ -113,7 +119,9 @@ function sortAZ() {
 }
 btnAZ.addEventListener('click',sortAZ)
 
+
 //Sort Z-A
+
 
 function sortZA() {
     tableDiv.innerHTML = ''
@@ -127,7 +135,7 @@ function sortZA() {
             box.innerHTML = `
             <td><img src="${item.image}" alt=""></td>
             <td><h6>${item.name}</h6></td>
-            <td><h6>$${item.price}</h6></td>
+            <td><h6>₹${item.price}</h6></td>
             <td><button onclick="deleteFromForm(${item.id})">sil</button></td>
             `;
             tableDiv.appendChild(box)
@@ -153,7 +161,7 @@ function sortLitleToLot() {
             box.innerHTML = `
             <td><img src="${item.image}" alt=""></td>
             <td><h6>${item.name}</h6></td>
-            <td><h6>$${item.price}</h6></td>
+            <td><h6>₹${item.price}</h6></td>
             <td><button onclick="deleteFromForm(${item.id})">sil</button></td>
             `;
             tableDiv.appendChild(box)
@@ -178,7 +186,7 @@ function sortLotToLimit() {
             box.innerHTML = `
             <td><img src="${item.image}" alt=""></td>
             <td><h6>${item.name}</h6></td>
-            <td><h6>$${item.price}</h6></td>
+            <td><h6>₹${item.price}</h6></td>
             <td><button onclick="deleteFromForm(${item.id})">sil</button></td>
             `;
             tableDiv.appendChild(box)
@@ -190,5 +198,6 @@ btnLotToLitle.addEventListener('click',sortLotToLimit)
 
 
 //Default
+
 
 yenile.addEventListener('click',getForm)

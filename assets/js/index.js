@@ -1,6 +1,5 @@
 const div = document.getElementById('myDiv');
 const myBtn = document.getElementById('myBtn')
-// let db;
 let limit = 12
 let page = 1
 async function getProducts() {
@@ -248,12 +247,17 @@ getData();
 
 
 // // sort a-z z-a azdan-coxa coxdan-aza default
+
+
 const btnAZ = document.getElementById('btnZA')
 const btnZA = document.getElementById('btnAZ')
 const yenile = document.getElementById('default')
 const btnLitleToLot = document.getElementById('btnLitleToLot')
 const btnLotToLitle = document.getElementById('btnLotToLitle')
+
+
 //Sort A-Z
+
 
 function sortAZ() {
     myApi.innerHTML = ''
@@ -288,7 +292,9 @@ function sortAZ() {
 }
 btnAZ.addEventListener('click',sortAZ)
 
+
 //Sort Z-A
+
 
 function sortZA() {
     myApi.innerHTML = ''
@@ -401,5 +407,6 @@ btnLotToLitle.addEventListener('click',sortLotToLimit)
 
 
 //Default
+
 
 yenile.addEventListener('click',getApi)
